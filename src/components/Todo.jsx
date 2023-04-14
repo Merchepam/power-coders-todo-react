@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 import trashCan from '../assets/images/trash-can.svg'
 import checkbox from '../assets/images/checkbox-checked.svg'
-import checkboxNotChecked from '../assets/images/checkbox-Not-Checked.svg'
+import checkboxNotChecked from '../assets/images/checkbox-not-checked.svg'
 
 import styles from './Todo.module.css'
 
