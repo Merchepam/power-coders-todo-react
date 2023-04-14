@@ -1,3 +1,4 @@
+import {toast} from 'sonner'
 import httpService from '../services/httpService.js'
 import useAuth from './useAuth.js'
 
@@ -9,6 +10,14 @@ function useServer() {
       setUser({...data})
     }
 
+    if (error && error.status === 401) {
+      toast.error ('El usuario o contraseña incorrecto')
+    } else {
+    
+    if (error){
+      toast.error(error.message)
+    }
+  }
     return { data, loading, error }
   }
   
